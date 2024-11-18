@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Hazel Peanut</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <header role="heading">
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem" class="topo"><a href="produto.html" role="link" tabindex="0" id="option1">PRODUTO</a></li>
+                <li role="listitem" class="topo"><a href="empresa.html" role="link" tabindex="0" id="option2">EMPRESA</a></li>
+                <li role="listitem" class="topo"><a href="equipe.html" role="link" tabindex="0" id="option3">EQUIPE</a></li>
+                <li role="listitem" class="topo"><a href="evento.html" role="link" tabindex="0" id="option4">EVENTO</a></li>
+                <li role="listitem" class="topo"><a href="#" role="link" tabindex="0" id="option5" class="atual">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div id="shadow"></div>
+        <div id="header">
+            <a href="index.html" role="link" tabindex="0">
+                <picture role="img">
+                    <source media="(max-width:550pt)" srcset="img/logo1c.png" role="img" alt="Logo da empresa, utiliza tons de marrom e uma fonte estilizada no nome da companhia." type="image/png" id="logo1">
+                    <img src="img/logo2c.png" role="img" alt="Logo da empresa, utiliza tons de marrom e uma fonte estilizada no nome da companhia." id="logo2">
+                </picture></a>
+        </div>
+        <img src="img/escuro.png" onclick="paletaf()" role="button" alt="Imagem referente ao estilo de cor da página, um Sol representa o modo claro, uma Lua o escuro." tabindex="0" id="paletai">
+    </header>
+    <main role="main">
+        <form role="form" action="mailto:hazelpeanutoficial@gmail.com" method="post">
+            <label for="fnome">Digite seu nome:</label><br>
+            <input type="text" id="fnome" name="Nome" placeholder="John Doe" maxlength="256" tabindex="0" required><br>
+            <label for="fmail">Digite seu e-mail:</label><br>
+            <input type="email" id="fmail" name="E-mail" placeholder="john.doe@email.com" maxlength="256" tabindex="0" required><br>
+            <label for="fmsg">Digite sua mensagem:</label><br>
+            <textarea id="fmsg" name="Mensagem" placeholder="…" maxlength="1024" tabindex="0" required></textarea><br>
+            <input type="reset" value="Limpar" tabindex="0" id="flimpa"><input type="submit" value="Enviar" tabindex="0" id="fenv">
+        </form>
+        <div id="cnt4"></div>
+    </main>
+    <a href="https://www.instagram.com/hazelpeanutp" target="_blank" role="link" tabindex="0"><img src="img/instagram.jpg" role="img" alt="Logo do aplicativo Instagram, envia-o(a) a página oficial da empresa." id="instagram"></a>
+    <a href="https://wa.me/5518996973520" target="_blank" role="link" tabindex="0"><img src="img/whatsapp.jpg" role="img" alt="Logo do aplicativo Whatsapp, envia-o(a) ao contato oficial da empresa." id="whatsapp"></a>
+    <footer role="contentinfo" onclick="footerf()" tabindex="0">
+        <p>&copy; 2024 - Hazel Peanut</p>
+    </footer>
+    <script src="javahscript.js"></script>
+</body>
+</html>

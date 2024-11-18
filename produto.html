@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - Hazel Peanut</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="img/icone.ico">
+</head>
+<body>
+    <header role="heading">
+        <nav role="navigation">
+            <ul role="list">
+                <li role="listitem" class="topo"><a href="#" role="link" tabindex="0" id="option1" class="atual">PRODUTO</a></li>
+                <li role="listitem" class="topo"><a href="empresa.html" role="link" tabindex="0" id="option2">EMPRESA</a></li>
+                <li role="listitem" class="topo"><a href="equipe.html" role="link" tabindex="0" id="option3">EQUIPE</a></li>
+                <li role="listitem" class="topo"><a href="evento.html" role="link" tabindex="0" id="option4">EVENTO</a></li>
+                <li role="listitem" class="topo"><a href="contato.html" role="link" tabindex="0" id="option5">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div id="shadow"></div>
+        <div id="header">
+            <a href="index.html" role="link" tabindex="0">
+                <picture role="img">
+                    <source media="(max-width:550pt)" srcset="img/logo1c.png" role="img" alt="Logo da empresa, utiliza tons de marrom e uma fonte estilizada no nome da companhia." type="image/png" id="logo1">
+                    <img src="img/logo2c.png" role="img" alt="Logo da empresa, utiliza tons de marrom e uma fonte estilizada no nome da companhia." id="logo2">
+                </picture></a>
+        </div>
+        <img src="img/escuro.png" onclick="paletaf()" role="button" alt="Imagem referente ao estilo de cor da página, um Sol representa o modo claro, uma Lua o escuro." tabindex="0" id="paletai">
+    </header>
+    <main role="main">
+        <div id="carrossel1">
+            <div class="carrossel2">
+                <img src="img/produto1.jpg" role="img" alt="Panqueca recheada, de cor marrom, exibida em um prato com estampas de cor laranja." class="carrossel3">
+                <img src="img/produto2.jpg" role="img" alt="Panqueca recheada, de cor marrom, exibida em um prato branco. Está acompanhada por uma cobertura, mel e algumas frutas." class="carrossel3">
+                <img src="img/produto3.jpg" role="img" alt="Pote branco, de formato levemente quadrado, cheio de amendoins caramelos e rachados." class="carrossel3">
+                <img src="img/produto4.jpg" role="img" alt="Uma pessoa segurando um prato que contém algumas panquecas, essas estão com cobertura de chocolate." class="carrossel3">
+                <img src="img/produto5.jpg" role="img" alt="Três colheres carregadas de amendoins de diferentes variedades, estão expostos em um fundo rosa-claro." class="carrossel3">
+                <img src="img/produto6.jpg" role="img" alt="Pasta de amendoim sendo retirada de um pote com a utilização de um talher branco." class="carrossel3">
+            </div>
+        </div>  
+        <h2>Receita de Panqueca de Creme de Avelã e Amendoim</h2>
+        <h2>Ingredientes</h2>
+        <h3>Massa</h3>
+        <ul role="list">
+            <li role="listitem" class="lista">1 xícara de farinha de trigo;</li>
+            <li role="listitem" class="lista">1 xícara de leite;</li>
+            <li role="listitem" class="lista">1 ovo;</li>
+            <li role="listitem" class="lista">1 colher de sopa de óleo (ou manteiga derretida);</li>
+            <li role="listitem" class="lista">1 pitada de sal;</li>
+            <li role="listitem" class="lista">1 colher de sopa de açúcar (opcional).</li>
+        </ul>
+        <h3>Recheio</h3>
+        <ul role="list">
+            <li role="listitem" class="lista">1/2 xícara de creme de avelã;</li>
+            <li role="listitem" class="lista">2 colheres de sopa de pasta de amendoim;</li>
+            <li role="listitem" class="lista">Amendoim picado para polvilhar (opcional).</li>
+        </ul>
+        <h3>Cobertura</h3>
+        <ul role="list">
+            <li role="listitem" class="lista">Chocolate derretido ou calda de chocolate (opcional);</li>
+            <li role="listitem" class="lista">Açúcar de confeiteiro para polvilhar (opcional).</li>
+        </ul>
+        <h2>Modo de Preparo</h2>
+        <ul role="list">
+            <li role="listitem" class="lista"><span class="b">Prepare a Massa:</span> Em uma tigela, misture a farinha, o leite, o ovo, o óleo, o sal e o açúcar até obter uma massa lisa e homogênea.</li>
+            <li role="listitem" class="lista"><span class="b">Cozinhe as Panquecas:</span> Aqueça uma frigideira antiaderente, unte com óleo ou manteiga e adicione uma concha de massa. Cozinhe cada lado por 1-2 minutos até dourar.</li>
+            <li role="listitem" class="lista"><span class="b">Recheie as Panquecas:</span> Espalhe uma camada de creme de avelã e, por cima, um pouco de pasta de amendoim. Dobre ou enrole as panquecas.</li>
+            <li role="listitem" class="lista"><span class="b">Finalização:</span> Regue com chocolate derretido ou polvilhe açúcar de confeiteiro e amendoim picado por cima, se desejar.</li>
+        </ul>
+    </main>
+    <a href="https://www.instagram.com/hazelpeanutp" target="_blank" role="link" tabindex="0"><img src="img/instagram.jpg" role="img" alt="Logo do aplicativo Instagram, envia-o(a) a página oficial da empresa." id="instagram"></a>
+    <a href="https://wa.me/5518996973520" target="_blank" role="link" tabindex="0"><img src="img/whatsapp.jpg" role="img" alt="Logo do aplicativo Whatsapp, envia-o(a) ao contato oficial da empresa." id="whatsapp"></a>
+    <footer role="contentinfo" onclick="footerf()" tabindex="0">
+        <p>&copy; 2024 - Hazel Peanut</p>
+    </footer>
+    <script src="javahscript.js"></script>
+</body>
+</html>

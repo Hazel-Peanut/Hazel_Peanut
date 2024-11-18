@@ -1,0 +1,381 @@
+:root {
+    --base: #bf8c39;
+    --base2: #b58332;
+    --base3: #af7e2f;
+    --base4: #e8b561;
+    --brown: #f3c170;
+    --select: #9e7025;
+    --white: #ffffff;
+    --black: #000000;
+    --shadow: #00000055;
+}
+[paletat="dark"] {
+    --base: #1f0c06;
+    --base2: #230e07;
+    --base3: #260f07;
+    --base4: #110603;
+    --brown: #0e0503;
+    --select: #2f1209;
+    --white: #000000;
+    --black: #ffffff;
+    --shadow: #ffffff55;
+}
+@font-face {
+    font-family: Jura;
+    src: url(font/jura.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(font/roboto.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--white);
+    min-width: 230px;
+}
+header {
+    width: 100%;
+    height: 50pt;
+    position: fixed;
+    top: 0;
+    background-image: radial-gradient(circle, var(--base), var(--base4));
+    z-index: 1;
+}
+#header {
+    width: 100%;
+    height: 50pt;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+#logo1, #logo2 {
+    height: 42pt;
+    position: relative;
+    top: 4pt;
+    object-fit: cover;
+    object-position: 50% 50%;
+    filter: drop-shadow(0.5pt 0.5pt 0.5pt var(--shadow));
+}
+#paletai {
+    width: 30pt;
+    position: fixed;
+    right: 10pt;
+    top: 10pt;
+}
+#shadow {
+    width: 100%;
+    height: 50pt;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2.5pt 2pt -2pt var(--shadow);
+}
+#option1 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 20%;
+    max-height: 20.75pt;
+    padding: 4pt 0 3pt 0;
+    top: 50pt;
+    left: 0%;
+    color: var(--black);
+}
+#option2 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 20%;
+    max-height: 20.75pt;
+    padding: 4pt 0 3pt 0;
+    top: 50pt;
+    left: 20%;
+    color: var(--black);
+}
+#option3 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 20%;
+    max-height: 20.75pt;
+    padding: 4pt 0 3pt 0;
+    top: 50pt;
+    left: 40%;
+    color: var(--black);
+}
+#option4 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 20%;
+    max-height: 20.75pt;
+    padding: 4pt 0 3pt 0;
+    top: 50pt;
+    left: 60%;
+    color: var(--black);
+}
+#option5 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    width: 20%;
+    max-height: 20.75pt;
+    padding: 4pt 0 3pt 0;
+    top: 50pt;
+    left: 80%;
+    color: var(--black);
+}
+#option1:not(.atual), #option3:not(.atual), #option5:not(.atual) {
+    background-color: var(--base2);
+}
+#option2:not(.atual), #option4:not(.atual) {
+    background-color: var(--base3);
+}
+.atual {
+    background-color: var(--select);
+}
+nav {
+    width: 100%;
+    height: 20.75pt;
+    position: fixed;
+    top: 50pt;
+    box-shadow: 0 2.5pt 2pt -2pt var(--shadow);
+}
+.topo {
+    width: 0;
+    height: 0;
+}
+main {
+    margin-top: 70.75pt;
+    padding: 1vh 1vw;
+}
+h2 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 200%;
+    font-weight: 800;
+    margin-top: 2pt;
+    color: var(--black);
+}
+h3 {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 800;
+    margin-top: 2pt;
+    color: var(--black);
+}
+.paragraph, figcaption {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 100%;
+    text-align: justify;
+    margin-top: 2pt;
+    color: var(--black);
+}
+#ee {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 80%;
+    margin-top: 2pt;
+    color: var(--white);
+}
+.it {
+    font-style: italic;
+}
+.b {
+    font-weight: 600;
+}
+.evento {
+    text-align: center;
+}
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    max-width: calc(93.27vw - (93.27vw - 100%));
+    justify-content: center;
+    margin: 0 auto 4pt auto;
+}
+.home2 {
+    height: 178pt;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 0.5%;
+    margin: 0.2vh 0.2vw;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+.lista {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 100%;
+    margin-top: 2pt;
+    margin-left: 15pt;
+    color: var(--black);
+}
+#equipe {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    max-width: calc(69vw - (69vw - 100%));
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    height: 405pt;
+    border-radius: 0.5%;
+    padding: 8pt;
+    margin: 0.2vh 0.2vw;
+    background-color: var(--base);
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+.equipe2 {
+    height: 213pt;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 0.5%;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+figcaption {
+    width: 158.96pt;
+}
+iframe {
+    height: 400pt;
+    width: calc(98.02vw - (98.02vw - 100%));
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-width: 0;
+    border-radius: 0.5%;
+    margin: 0 auto 4pt auto;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    color: var(--black);
+}
+#fnome, #fmail, textarea {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 100%;
+    padding: 5pt;
+    border-width: 2pt;
+    border-style: solid;
+    border-radius: 0.5%;
+    border-color: var(--base2);
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    width: calc(98.02vw - (98.02vw - 100%));
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+textarea {
+    height: 200pt;
+    resize: none;
+}
+#flimpa, #fenv {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+    padding: 7pt 7pt 6pt 7pt;
+    border-width: 0;
+    border-radius: 0.5%;
+    background-color: var(--base3);
+    color: var(--black);
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+#fenv {
+    margin-left: 5pt;
+}
+#instagram {
+    width: 40pt;
+    border-radius: 100%;
+    position: fixed;
+    right: 55pt;
+    bottom: 2pt;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+#whatsapp {
+    width: 40pt;
+    border-radius: 100%;
+    position: fixed;
+    right: 10pt;
+    bottom: 2pt;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+footer p {
+    font-family: Jura, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding: 16pt 0 15pt 0;
+    background-color: var(--brown);
+    color: var(--black);
+    box-shadow: 0 -2.5pt 2pt -2pt var(--shadow);
+}
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+#carrossel1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 4pt;
+}
+.carrossel2 {
+    display: inline-block;
+    animation: 20s mover infinite linear;
+}
+.carrossel3 {
+    height: 178pt;
+    width: 30.83vw;
+    min-width: 178pt;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 0.5%;
+    margin: 0 0.5pt;
+    box-shadow: 1.5pt 1.5pt 1pt -1pt var(--shadow);
+}
+#carrossel1:hover .carrossel2 {
+    animation-play-state: paused;
+}
+#cnt1 {
+    height: 16vw;
+}
+#cnt2 {
+    height: 5vw;
+}
+#cnt3 {
+    height: 3vw;
+}
+#cnt4 {
+    height: 7vw;
+}
